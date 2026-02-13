@@ -1,6 +1,12 @@
+import BannerGlobal from '../components/BannerGlobal/BannerGlobal'
+import NavBar from '../components/NavBar/NavBar'
+
 function NovaEdicao(){
     return(
-        <p>opa</p>
+        <>
+        <BannerGlobal />
+        <NavBar />
+        </>
     )
 }
 

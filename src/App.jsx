@@ -3,6 +3,7 @@ import Login from './pages/Login'
 import './shared/tailwind.css'
 import Home from './pages/Home'
 import NovaEdicao from './pages/NovaEdicao'
+import Edicao from './pages/Edicao'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route path='/' element={<Login />} />
           <Route path='/home' element={<Home />} /> 
           <Route path='/NovaEdicao' element={<NovaEdicao />} />
+          <Route path='/Edicao' element={<Edicao />}/>
         </Routes> 
       </BrowserRouter>
     </>
