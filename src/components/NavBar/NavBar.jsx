@@ -5,12 +5,14 @@ function NavBar(){
         <nav className="bg-red-500 p-5 w-100 fixed bottom-0">
             <ul className="flex justify-around items-center">
                 <li>
-                    <Link to={"/home"}>
+                    <Link to={"/Home"}>
                         <img src="/icons/house-icon.svg" alt="Home" />
                     </Link>
                 </li>
                 <li>
-                    <img className="invert w-8" src="/icons/person-icon.svg" alt="Turma" />
+                    <Link to={"/Turmas"}>
+                        <img className="invert w-8" src="/icons/person-icon.svg" alt="Turma"/>
+                    </Link>
                 </li>
                 <li>
                     <img src="/icons/trophy-icon.svg" alt="Ranking" />

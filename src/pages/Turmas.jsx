@@ -1,0 +1,20 @@
+import BannerGlobal from "../components/BannerGlobal/BannerGlobal"
+import ButtonCard from "../components/ButtonCard/ButtonCard"
+import NavBar from "../components/NavBar/NavBar"
+
+
+function Turmas(){
+    return(
+        <>
+        <BannerGlobal titulo="Turmas"/>
+        <section>
+            <ButtonCard texto="3• Ano EM" seta="true"/>
+            <ButtonCard texto="2• Ano EM" seta="true"/>
+            <ButtonCard texto="1• Ano EM" seta="true"/>
+        </section>
+        <NavBar />
+        </>
+    )
+}
+
+export default Turmas

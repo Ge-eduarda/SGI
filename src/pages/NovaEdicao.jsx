@@ -4,7 +4,7 @@ import NavBar from '../components/NavBar/NavBar'
 function NovaEdicao(){
     return(
         <>
-        <BannerGlobal />
+        <BannerGlobal titulo="Nova Edição"/>
         <NavBar />
         </>
     )
