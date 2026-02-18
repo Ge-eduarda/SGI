@@ -11,7 +11,7 @@ function NavBar(){
                 </li>
                 <li>
                     <Link to={"/Turmas"}>
-                        <img className="invert w-8" src="/icons/person-icon.svg" alt="Turma"/>
+                        <img className="invert" src="/icons/person-icon.svg" alt="Turma"/>
                     </Link>
                 </li>
                 <li>

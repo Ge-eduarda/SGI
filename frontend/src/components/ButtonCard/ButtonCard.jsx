@@ -55,7 +55,7 @@ function ButtonCard(props){
             // Aqui eu nem mechi, é o codigo q vc fez
             <div className="w-80 mx-auto my-5 shadow-lg rounded-md flex justify-between items-center p-5 ">
                 <div className={`${temIcone ? 'block' : 'hidden'}`}>
-                    <img className="invert" src={props.icon} alt={props.alt} />
+                    <img className={`${props.invert == 'true' ? 'invert' : ''}`} src={props.icon} alt={props.alt} />
                 </div>
                 <div>
                     <h2 className="text-lg font-bold">{props.texto}</h2>
