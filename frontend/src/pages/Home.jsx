@@ -1,36 +1,35 @@
-import { Link } from "react-router-dom"
-import BannerGlobal from "../components/BannerGlobal/BannerGlobal"
-import Botao from "../components/Botao/Botao"
-import NavBar from "../components/NavBar/NavBar"
-import ButtonCard from "../components/ButtonCard/ButtonCard"
 import { useEffect } from "react"
-import DadosJson from "../assets/json/dados_db.json"
+import BannerGlobal from "../Componentes/BannerGlobal/BannerGlobal"
+import NavBar from "../Componentes/NavBar/NavBar"
+import CardInfo from "../Componentes/CardInfo/CardInfo"
+import { Link } from "react-router-dom"
+import Button from "../Componentes/Button/Button"
 
-function Home() {
-
+function Home(){
     useEffect(()=>{
         document.title = "SGM - Home"
     },[])
-    return (
-        < >
+    return(
+        <>
             <BannerGlobal />
-            <Link to={"/NovaEdicao"}>
-                <Botao> <img src="/icons/plus-icon.svg" alt="Mais" /> Criar Nova edição</Botao>
-            </Link>
-            <section className="w-full py-10 flex flex-col justify-center ">
-                {DadosJson.edicoes.map(edicao => 
-                    <Link to={"/Interclasse"}>
-                        <ButtonCard
-                            key={edicao.id}
-                            titulo={edicao.titulo}
-                            status={edicao.status}
-                        />
+            <main className="w-full flex flex-col items-center my-5 pb-20">
+                <div className="w-[80%] flex flex-col gap-4 items-start">
+                    <Link to={"/NovaEdicao"}>
+                        <Button>
+                            <img src="/icons/plus-icon.svg" alt="Icone de Mais" /> Criar Nova Edição
+                        </Button>
                     </Link>
-                )}
-            </section>
+                    <Link to={"/Edicao"} className="w-full">
+                        <CardInfo titulo="Interclasse 2026" status="Em Andamento"/>
+                    </Link>
+                    <CardInfo titulo="Interclasse 2025" status="Finalizado"/>
+                    <CardInfo titulo="Interclasse 2024" status="Finalizado"/>
+                </div>
+            </main>
             <NavBar />
         </>
     )
+
 }
 
 export default Home

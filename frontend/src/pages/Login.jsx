@@ -1,9 +1,8 @@
 import { useEffect } from "react"
-import BannerLogin from "../components/BannerLogin/BannerLogin"
-import Formulario from "../components/Formulario/Formulario"
+import BannerLogin from "../Componentes/BannerLogin/BannerLogin"
+import Formulario from "../Componentes/Formulario/Formulario"
 
 function Login(){
-
     useEffect(()=>{
         document.title = "SGM - Login"
     },[])
@@ -11,11 +10,10 @@ function Login(){
         <>
             <BannerLogin />
             <Formulario />
-            <picture className="">
-                <img src="/images/logo-sesi.png" alt="Logo do sesi" className="m-auto mt-6" />
+            <picture className="w-full">
+                <img className="m-auto mt-5" src="/images/sesi-logo.png" alt="Logo-Sesi" />
             </picture>
         </>
-        
     )
 }
 

@@ -1,13 +1,6 @@
-import BannerGlobal from "../components/BannerGlobal/BannerGlobal"
-import NavBar from "../components/NavBar/NavBar"
-
-function Ranking(props){
+function Ranking(){
     return(
-        <>
-            <BannerGlobal />
-
-            <NavBar />
-        </>
+        <p>opa</p>
     )
 }
 
