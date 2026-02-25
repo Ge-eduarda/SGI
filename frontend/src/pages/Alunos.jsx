@@ -1,8 +1,7 @@
-import BannerGlobal from "../components/BannerGlobal/BannerGlobal"
-import NavBar from "../components/NavBar/NavBar"
-import ButtonCard from '../components/ButtonCard/ButtonCard'
 import { useEffect } from "react"
-import DadosJson from "../assets/json/dados_db.json"
+import BannerGlobal from "../Componentes/BannerGlobal/BannerGlobal"
+import CardAluno from "../Componentes/CardAluno/CardAluno"
+import NavBar from "../Componentes/NavBar/NavBar"
 
 function Alunos(){
     useEffect(()=>{
@@ -11,10 +10,13 @@ function Alunos(){
 
     return(
         <>
-        <BannerGlobal titulo="Alunos"/>
-        <ButtonCard estrutura="complexo" nome="Gustavo" modalidade="Basquete"  />
-        <ButtonCard estrutura="complexo" nome="Gustavo" modalidade="Basquete" tipoComplexo="pontos"  />
-        <NavBar />
+        
+            <BannerGlobal titulo="Alunos" voltar="/Turmas" />
+
+            <CardAluno modalidade="Futsal" nome="Neymar" aberto="true"/>
+            <CardAluno modalidade="Basquete" nome="Lebron"/>
+            <NavBar />
+        
         </>
     )
 }
